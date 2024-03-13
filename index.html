@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!--EStilo de css-->
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <!--Cabecera de pagina-->
+    <header id="header">
+        <h1>Luz Alcoba</h1>
+        <p>Development Full Stack</p>
+    </header>
+
+
+    <!--Navegacion Principal-->
+
+    <nav>
+        <a href="">LA</a><button class="btn"></button>
+        <ul>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!--Contenido Principal-->
+    <main>
+        <!--Secion de Inicio-->
+        <section id="home">
+
+        </section>
+        <!--Seccion de Trabajos-->
+        <section id="portfolio">
+
+        </section>
+        <!--Seccion de proyectos-->
+        <section id="projects">
+
+        </section>
+        <!--Seccion de contactos-->
+        <section id="contact">
+
+        </section>
+    </main>
+
+
+    <!--Pie de pagina-->
+    <footer id="footer">
+        <!--Mapa de contacto-->
+        <div class="map">
+            
+        </div>
+        <!--Formulario de contacto-->
+        <form action="" id="contact">
+            <h2>Deja tu consulta</h2>
+            <!--Campo nombre--->
+            <label for="contactName">Ingrese su nombre</label>
+            <input 
+                id="contactName" 
+                name="name" 
+                type="text" 
+                maxlength="50"
+                pattern="[A-Z a-z]{3,50}"
+                required>
+            <div class="validation">
+                Utilice entre 3 y 50 caracteres, que sean solamente letras
+            </div>
+
+            <!--Campo Correo-->
+            <label for="contactEmail">Ingrese su correo</label>
+            <input 
+                id="contactEmail" 
+                name="email" 
+                type="email" 
+                minlength="8"
+                required>
+            <div class="validation">
+                Coloque una direccion de al menos 8 caracteres respetando el formato "example@servidor.com"
+            </div>
+
+            <!--Campo Telefono-->
+            <label for="contactPhone">Ingrese su numero de telefono</label>
+            <!--pattern es el patron que funciona como un vector de validacion-->
+            <input 
+                id="contactPhone" 
+                name="phone" 
+                type="tel" 
+                pattern="[0-9]"{6,20} 
+                required>
+            <div class="validation">
+                coloque su numero de telefono sin espacios, ni simbolos, ingrese solo numeros
+            </div>
+
+            <!--Campo Consulta-->
+
+            <label for="contactConsult">Ingrese su consulta </label>
+            <textarea 
+                    name="contactConsult" 
+                    id="consult"
+                    minlength="30"
+                    maxlength="1500"
+                    required></textarea>
+            <button class="btn">enviar</button>
+        </form>
+        <!--Redes sociales-->
+        <!--NO puede ser una seccion porque la seccion prescinde de encabezado y texto descriptivo-->
+        <div class="social">
+            <a class="linkedin" 
+                href="https://linkedin.com/in/profile" 
+                target="_blank" 
+                title="linkedin">
+            </a>
+            <a class="linkedin" href="https://.com" target="_blank" title=""></a>
+            <a class="linkedin" href="https://.com" target="_blank" title=""></a>
+            <a class="linkedin" href="https://.com" target="_blank" title=""></a>
+            
+        </div>
+        <!--Derechos de autor-->
+        <p class="copy">&copy; 2023 Todos los derechos reservados| para mas informacion consultar a <a href="mailto:luzgalcoba25@gmail.com">luzgalcoba25@gmail.com</a></p>
+        <h1>Prueba git</h1>
+    </footer>
+
+    <!--logica de js-->
+    <script src="scripts/index.js"></script>
+
+</body>
+</html>
